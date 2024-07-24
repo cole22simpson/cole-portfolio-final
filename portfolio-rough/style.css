@@ -166,7 +166,7 @@ body {
 .about {
   font-family: 'Cabin', sans-serif;
   color: var(--almond);
-  font-size: 30px;
+  font-size: 20px;
   text-align: left;
   line-height: 2;
   border-top: solid 2px var(--almond);
@@ -229,7 +229,7 @@ body {
 .project-item {
   flex: 1 1 30%;
   text-align: center;
-  padding: 50px;
+  /* padding: 50px; */
 }
 
 .project-img-container {
@@ -237,6 +237,7 @@ body {
   align-items: center;
   max-width: 100%;
   overflow: hidden;
+  border-radius: 25px;
 }
 
 .project-img {
@@ -254,15 +255,91 @@ body {
   font-family: 'Cabin', sans-serif;
   text-align: left;
   line-height: 1.5;
+  padding: 10px;
+}
+
+.recommendations {
+  display: flex;
+  flex-direction: column;
+}
+
+.rec {
+  display: flex;
+}
+
+.teacher {
+  font-size: 20px;
+  color: var(--almond);
+  font-family: 'Cabin', sans-serif;
+}
+
+.rec-link {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  font-family: 'Cabin', sans-serif;
+  background-color: var(--almond);
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.rec-link:hover {
+  opacity: 0.7;
+}
+
+.contact-right {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-box {
+  width: 100%;
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+  color: var(--almond);
+}
+
+.contact-heading {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.my-contact {
+  margin: 5px;
+  font-weight: normal;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 30%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc9c9;
+  border-radius: 4px;
+  font-family: 'Cabin', sans-serif;
 }
 
 .contact-btn {
   font-size: 32px;
   font-family: 'Cabin', sans-serif;
-  padding: 3px;
+  font-weight: 700;
+  padding: 5px;
   color: var(--almond);
+  cursor: pointer;
   background-color: var(--green);
   border: solid 2px var(--almond);
+  border-radius: 5px;
 }
 
 .contact-btn:hover {
