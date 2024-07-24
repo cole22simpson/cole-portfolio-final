@@ -166,10 +166,45 @@ body {
 .about {
   font-family: 'Cabin', sans-serif;
   color: var(--almond);
-  font-size: 20px;
+  font-size: 25px;
   text-align: left;
   line-height: 2;
   border-top: solid 2px var(--almond);
+}
+
+.recommendations {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.rec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.teacher {
+  font-size: 25px;
+  color: var(--almond);
+  font-family: 'Cabin', sans-serif;
+}
+
+.rec-link {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  font-family: 'Cabin', sans-serif;
+  background-color: var(--almond);
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.rec-link:hover {
+  opacity: 0.7;
 }
 
 .cole-img-container {
@@ -256,36 +291,6 @@ body {
   text-align: left;
   line-height: 1.5;
   padding: 10px;
-}
-
-.recommendations {
-  display: flex;
-  flex-direction: column;
-}
-
-.rec {
-  display: flex;
-}
-
-.teacher {
-  font-size: 20px;
-  color: var(--almond);
-  font-family: 'Cabin', sans-serif;
-}
-
-.rec-link {
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  font-family: 'Cabin', sans-serif;
-  background-color: var(--almond);
-  padding: 5px;
-  border-radius: 10px;
-  font-weight: 700;
-}
-
-.rec-link:hover {
-  opacity: 0.7;
 }
 
 .contact-right {
