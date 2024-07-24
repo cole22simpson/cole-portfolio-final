@@ -1,0 +1,339 @@
+:root {
+  --silver: #878E99;
+  --almond: #FFECD1;
+  --green: #093A3E;
+  --brandy: #8E4A49;
+  --purple: #4C3549;
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  top: 0;
+  position: sticky;
+  width: 100%;
+  position: -webkit-sticky;
+  padding: 30px;
+  background-color: var(--green);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  padding-left: 30px;
+  font-size: 32px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 30px;
+}
+
+header nav ul li a:hover {
+  opacity: 0.7;
+}
+
+.download-tab a {
+  color: black;
+  border: solid white;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+body {
+  background-color: var(--almond);
+}
+
+.logo {
+  font-size: 200px;
+  font-family: "Bodoni Moda SC", serif;
+}
+
+.intro-icons {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+}
+
+.intro-icon {
+  width: 50px;
+  height: 50px;
+  border: solid 1px var(--white);
+  padding: 4px;
+}
+
+.intro-icon a {
+  color: var(--white);
+  font-size: 40px;
+ }
+
+ .intro-icon a:hover {
+  opacity: 0.7;
+ }
+
+.intro-box {
+  background-color: var(--almond);
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 550;
+}
+
+.about-box {
+  background-color: var(--green);
+}
+
+.project-box {
+  background-color: var(--almond);
+  height: 100vh;
+}
+
+.contact-box {
+  background-color: var(--green);
+  height: 60vh;
+}
+
+.section {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 72px;
+  font-weight: 550;
+  padding: 30px;
+}
+
+.almond {
+  color: var(--almond);
+}
+
+.about-section-title {
+  font-family: 'Cabin', sans-serif;
+  color: var(--almond);
+  font-size: 35px;
+  border-bottom: solid, 2px, var(--almond);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about-item {
+  flex: 1;
+  text-align: center;
+  padding: 50px;
+}
+
+.about {
+  font-family: 'Cabin', sans-serif;
+  color: var(--almond);
+  font-size: 30px;
+  text-align: left;
+  line-height: 2;
+  border-top: solid 2px var(--almond);
+}
+
+.cole-img-container {
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  max-width: 100%; /* Ensure the image does not exceed the width of its container */
+  overflow: hidden;
+}
+
+.comment {
+  color: var(--almond);
+  font-size: 30px;
+  font-family: 'Cabin', sans-serif;
+}
+
+.cole-img {
+  max-width: 100%; /* Ensure the image does not exceed the width of its container */ /* Maintain aspect ratio */
+}
+
+.skills-container {
+  border-top: solid 2px var(--almond);
+  font-family: 'Cabin', sans-serif;
+  color: var(--almond);
+  font-size: 30px;
+  text-align: left;
+  line-height: 2;
+}
+
+.skill-section-title {
+  text-decoration: underline;
+}
+
+.skill-item {
+  font-size: medium;
+}
+
+.time-frame {
+  font-weight: normal;
+  font-size: medium;
+}
+
+.project-section-title {
+  font-family: 'Cabin', sans-serif;
+  color: black;
+  font-size: 35px;
+  border-bottom: solid, 2px, var(--almond);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-item {
+  flex: 1 1 30%;
+  text-align: center;
+  padding: 50px;
+}
+
+.project-img-container {
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  max-height: 750px;
+  padding: 5%;
+}
+
+.project-img:hover {
+  opacity: 0.7;
+}
+
+.project-desc {
+  font-family: 'Cabin', sans-serif;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.contact-btn {
+  font-size: 32px;
+  font-family: 'Cabin', sans-serif;
+  padding: 3px;
+  color: var(--almond);
+  background-color: var(--green);
+  border: solid 2px var(--almond);
+}
+
+.contact-btn:hover {
+  opacity: 0.7;
+}
+
+ footer {
+  height: 300px;
+  background-color: var(--black);
+ }
+
+ .top-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+
+ #top {
+  color: var(--white);
+  font-size: 56px;
+  padding: 25px;
+ }
+
+ #top:hover {
+  opacity: .7;
+ }
+
+ .socials {
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  text-align: center;
+  border-bottom: solid 1px var(--white);
+  padding-bottom: 10px;
+  margin-left: 40%;
+  margin-right: 40%;
+ }
+
+ .icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+ }
+
+ .icon {
+  width: 50px;
+  height: 50px;
+  border: solid 1px var(--white);
+  margin: 0 15px 15px 15px;
+  padding: 4px;
+ }
+
+ .icon a {
+  color: var(--white);
+  font-size: 40px;
+ }
+
+ .icon a:hover {
+  opacity: 0.7;
+ }
+
+ .created-by {
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+ }
+
+ /* @media (max-width: 768px) {
+  .project-item {
+    flex: 1 1 100%; /* Stacks items on smaller screens */
+    /* padding: 10px;
+  }
+ } */
