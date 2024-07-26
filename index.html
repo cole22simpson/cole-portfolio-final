@@ -229,11 +229,11 @@
       <h4 class="my-contact"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m16.556 12.906l-.455.453s-1.083 1.076-4.038-1.862s-1.872-4.014-1.872-4.014l.286-.286c.707-.702.774-1.83.157-2.654L9.374 2.86C8.61 1.84 7.135 1.705 6.26 2.575l-1.57 1.56c-.433.432-.723.99-.688 1.61c.09 1.587.808 5 4.812 8.982c4.247 4.222 8.232 4.39 9.861 4.238c.516-.048.964-.31 1.325-.67l1.42-1.412c.96-.953.69-2.588-.538-3.255l-1.91-1.039c-.806-.437-1.787-.309-2.417.317"/></svg> : 858-248-1355</h4>
       <h4 class="my-contact"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z"/></svg> : cole22simpson@gmail.com</h4>
       <h3 class="contact-heading">Or You Can Leave A Message Below</h3>
-      <form class="contact-form" name="contact-right">
+      <form class="contact-form" name="contact-right" id="contact-form">
         <input class="contact-item contact-name" type="text" id="Name" name="Name" placeholder="Your Name" required>
         <input class="contact-item contact-name" type="email" id="Email" name="Email" placeholder="Your Email" required>
         <textarea class="contact-item contact-message" name="Message" id="Message" rows="6" placeholder="Your Message"></textarea>
-        <button onclick="sendEmail()" type="submit" class="contact-btn">Submit</button>
+        <button type="submit" class="contact-btn">Submit</button>
       </form>
     </div>
   </section>
@@ -257,7 +257,36 @@
     </p>
   </footer>
   <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script src="./script.js"></script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init({
+        publicKey: "eXWauXVA4I9GCbLsn",
+      });
+   })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const serviceID = 'service_x4u8o1i'; // Replace with your EmailJS service ID
+      const templateID = 'template_n3b2fzf'; // Replace with your EmailJS template ID
+
+      var templateParams = {
+        from_name: document.getElementById('Name').value,
+        email_id: document.getElementById('Email').value,
+        message: document.getElementById('Message').value,
+      };
+
+      emailjs.send(serviceID, templateID, templateParams)
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Message sent successfully!');
+      }, function(error) {
+        console.log('FAILED...', error);
+        alert('Failed to send message. Please try again later.');
+      });
+    });
+  </script>
 </body>
 </html>
