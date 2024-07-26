@@ -35,9 +35,8 @@
           <li>
             <a href="#contact">CONTACT</a>
           </li>
-          <li class="download-tab">
-            <a href="./assets/files/OfficialResume.pdf" download class="btn">DOWNLOAD CV<span class="dl-icon"><svg class="download" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="none" stroke-dasharray="14" stroke-dashoffset="14" d="M6 19h12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="14;0"/></path><path fill="currentColor" d="M12 4 h2 v6 h2.5 L12 14.5M12 4 h-2 v6 h-2.5 L12 14.5"><animate attributeName="d" calcMode="linear" dur="1.5s" keyTimes="0;0.7;1" repeatCount="indefinite" values="M12 4 h2 v6 h2.5 L12 14.5M12 4 h-2 v6 h-2.5 L12 14.5;M12 4 h2 v3 h2.5 L12 11.5M12 4 h-2 v3 h-2.5 L12 11.5;M12 4 h2 v6 h2.5 L12 14.5M12 4 h-2 v6 h-2.5 L12 14.5"/></path></g></svg>
-            </span></a>
+          <li>
+            <a href="./assets/files/OfficialResume.pdf" download class="btn">DOWNLOAD CV</a>
           </li>
         </ul>
       </div>
@@ -161,7 +160,7 @@
   <section class="project-box" id="projects">
     <h2 class="section">PROJECTS</h2>
     <div class="project-container">
-      <div class="project-item project-img-container">
+      <div class="project-item">
         <h3 class="project-section-title">Firearm Detection System</h3>
         <a href="https://docs.google.com/document/d/1R9YC8YGv0rDMz6DK7JcQLfJlFUd5Mb06MHHTuY2rSAo/edit?usp=sharing">
           <img class="project-img" src="./assets/images/gun-detection.jpg">
@@ -174,13 +173,13 @@
           cameras and would alert on-site security or local police in the event 
           that a possible shooter is identified. This could minimize or prevent damages caused 
           by said shooter.
-          <br>
+          <br><br>
           The system employs a supervised learning model that was trained with 
           a convolutional neural network. It was trained using thousands of images distinguishing 
           between handguns and rifles.
         </p>
       </div>
-      <div class="project-item project-img-container">
+      <div class="project-item">
         <h3 class="project-section-title">ShareWhere</h3>
         <a href="https://github.com/franky-cast/ChillSpots-App">
           <img class="project-img" src="./assets/images/share-where.jpg">
@@ -196,14 +195,14 @@
           get an idea of how busy the location might be. Once a user has visited a location, they may 
           leave a review on it in the app with a rating out of 5 stars and comments on their 
           experience.
-          <br>
+          <br><br>
           This website stores all data using MongoDB and is built using HTML, CSS, JavaScript, 
           and React. It also utilizes Express.js and Node.js for navigation and package management. 
           Adding and searching for locations uses a connection to the Google Maps API. This connection 
           allows for easy acquisition of location coordinates for data storage purposes.
         </p>
       </div>
-      <div class="project-item project-img-container">
+      <div class="project-item">
         <h3 class="project-section-title">Pizzeria Ordering System</h3>
         <a href="https://github.com/cole22simpson/PizzeriaOrderingSystem">
           <img class="project-img" src="./assets/images/deli-food-delivery.jpg">
@@ -216,7 +215,7 @@
           in the buffer at any given time. The number of active orders at one time is also limited so that the pizzeria is 
           not taking on more than they can handle at once. There are multiple delivery services waiting to accept and transport 
           the orders and all transactions are logged for proof of all completed orders.
-          <br>
+          <br><br>
           This multi-threaded system was created entirely using C++ and uses semaphores and a queue for the bounded buffer and barrier.
           All shared data is secured by locks and requires mutually exclusive access.
         </p>
@@ -225,16 +224,18 @@
   </section>
   <section class="contact-box" id="contact">
     <h2 class="section almond">CONTACT</h2>
-    <h3 class="contact-heading">You Can Reach Me At</h3>
-    <h4 class="my-contact"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m16.556 12.906l-.455.453s-1.083 1.076-4.038-1.862s-1.872-4.014-1.872-4.014l.286-.286c.707-.702.774-1.83.157-2.654L9.374 2.86C8.61 1.84 7.135 1.705 6.26 2.575l-1.57 1.56c-.433.432-.723.99-.688 1.61c.09 1.587.808 5 4.812 8.982c4.247 4.222 8.232 4.39 9.861 4.238c.516-.048.964-.31 1.325-.67l1.42-1.412c.96-.953.69-2.588-.538-3.255l-1.91-1.039c-.806-.437-1.787-.309-2.417.317"/></svg> : 858-248-1355</h4>
-    <h4 class="my-contact"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z"/></svg> : cole22simpson@gmail.com</h4>
-    <h3 class="contact-heading">Or You Can Leave A Message Below</h4>
-    <form name="contact-right">
-      <input class="contact-item contact-name" type="text" name="Name" placeholder="Your Name" required>
-      <input class="contact-item contact-name" type="email" name="Email" placeholder="Your Email" required>
-      <textarea class="contact-item contact-message" name="Message" rows="6" placeholder="Your Message"></textarea>
-      <button type="submit" class="contact-btn">Submit</button>
-    </form>
+    <div class="contact-container">
+      <h3 class="contact-heading">You Can Reach Me At</h3>
+      <h4 class="my-contact"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m16.556 12.906l-.455.453s-1.083 1.076-4.038-1.862s-1.872-4.014-1.872-4.014l.286-.286c.707-.702.774-1.83.157-2.654L9.374 2.86C8.61 1.84 7.135 1.705 6.26 2.575l-1.57 1.56c-.433.432-.723.99-.688 1.61c.09 1.587.808 5 4.812 8.982c4.247 4.222 8.232 4.39 9.861 4.238c.516-.048.964-.31 1.325-.67l1.42-1.412c.96-.953.69-2.588-.538-3.255l-1.91-1.039c-.806-.437-1.787-.309-2.417.317"/></svg> : 858-248-1355</h4>
+      <h4 class="my-contact"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z"/></svg> : cole22simpson@gmail.com</h4>
+      <h3 class="contact-heading">Or You Can Leave A Message Below</h3>
+      <form class="contact-form" name="contact-right">
+        <input class="contact-item contact-name" type="text" id="Name" name="Name" placeholder="Your Name" required>
+        <input class="contact-item contact-name" type="email" id="Email" name="Email" placeholder="Your Email" required>
+        <textarea class="contact-item contact-message" name="Message" id="Message" rows="6" placeholder="Your Message"></textarea>
+        <button onclick="sendEmail()" type="submit" class="contact-btn">Submit</button>
+      </form>
+    </div>
   </section>
   
 
@@ -255,8 +256,8 @@
       Created by Cole Simpson
     </p>
   </footer>
-  
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="./script.js"></script>
 </body>
-<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-<script src="./script.js"></script>
 </html>

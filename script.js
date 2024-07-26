@@ -5,20 +5,26 @@ function scrollToTop() {
     });
 }
 
+function sendEmail() {
+    (function() {
+        emailjs.init("-eXWauXVA4I9GCbLsn"); // Replace with your EmailJS user ID
+    })();
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyHAIXn1Pfmof-JNcllpG_RQyJdH-z_55st25ePG-fy_KY0HIohzuxasKJnkYTd6GON/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg")
+    const serviceID = 'service_x4u8o1i'; // Replace with your EmailJS service ID
+    const templateID = 'template_n3b2fzf'; // Replace with your EmailJS template ID
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-        msg.innerHTML = "Message Sent Successfully"
-        setTimeout(function(){
-            msg.innerHTML= ""
-        }, 5000)
-        form.reset()
-    })
-    .catch(error => console.error('Error!', error.message))
-})
+    var templateParams = {
+        from_name: document.getElementById['Name'].value, // Corrected access method
+        email_id: document.getElementById['Email'].value, // Corrected access method
+        message: document.getElementById['Message'].value, // Corrected access method
+    };
+
+    emailjs.send(serviceID, templateID, templateParams)
+    .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Message sent successfully!');
+    }, function(error) {
+        console.log('FAILED...', error);
+        alert('Failed to send message. Please try again later.');
+    });
+}
