@@ -441,7 +441,7 @@ header nav ul li a:hover {
 
 @media (max-width: 480px) {
   .about-section-title {
-    font-size: 5vw;
+    font-size: 6vw;
   }
 
   .about {
@@ -454,6 +454,10 @@ header nav ul li a:hover {
 
   .comment {
     font-size: 3vw;
+  }
+
+  .skill-section-title {
+    font-size: 5vw;
   }
 
   .skill-section {
@@ -470,7 +474,7 @@ header nav ul li a:hover {
   }
 
   .cole-img {
-    max-height: 25vh;
+    max-height: 40vh;
   }
 
   .cole-img-container {
