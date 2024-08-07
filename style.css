@@ -237,7 +237,7 @@ header nav ul li a:hover {
 .about {
   font-family: 'Cabin', sans-serif;
   color: var(--almond);
-  font-size: 1.2vw;
+  font-size: 1vw;
   text-align: left;
   line-height: 1.5;
   border-top: solid 2px var(--almond);
@@ -258,7 +258,7 @@ header nav ul li a:hover {
 }
 
 .teacher {
-  font-size: 1.2vw;
+  font-size: 1vw;
   color: var(--almond);
   font-family: 'Cabin', sans-serif;
 }
@@ -324,6 +324,7 @@ header nav ul li a:hover {
 @media (max-width: 1400px) {
   .skill-item {
     font-size: 1vw;
+    line-height: 1.2;
   }
 
   .skill-item li {
@@ -336,6 +337,7 @@ header nav ul li a:hover {
 
   .skill-section {
     font-size: 1vw;
+    line-height: 1.5;
   }
 
   .time-frame {

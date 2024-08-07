@@ -165,45 +165,39 @@
     <h2 class="section">PROJECTS</h2>
     <div class="project-container">
       <div class="project-item">
+        <h3 class="project-section-title">ShareWhere</h3>
+        <a href="https://github.com/franky-cast/ChillSpots-App">
+          <img class="project-img" src="./assets/images/share-where.jpg">
+        </a>
+        <p class="project-desc">
+          This website enables users to share their favorite hangout spots. To post a new location, users are prompted to provide a fun name, 
+          photos, directions, and tags describing various attributes such as parking, water bodies, accessibility for the disabled, dog friendliness, 
+          type of view, cost, and more. This information helps users prepare for their visits. Once posted, other users can view the location and save it to their 
+          favorites. The number of saves is tracked and publicly displayed to indicate the location's popularity. After visiting, users can leave a review with a 
+          rating out of 5 stars and comments on their experience.
+          <br><br>
+          The website uses MongoDB for data storage and is built with HTML, CSS, JavaScript, and React. It 
+          incorporates Express.js and Node.js for navigation and package management. Adding and searching for locations is 
+          facilitated through a connection to the Google Maps API, which simplifies the acquisition of location coordinates for data storage.
+        </p>
+      </div>
+      <div class="project-item">
         <h3 class="project-section-title">Firearm Detection System</h3>
         <a href="https://docs.google.com/document/d/1R9YC8YGv0rDMz6DK7JcQLfJlFUd5Mb06MHHTuY2rSAo/edit?usp=sharing">
           <img class="project-img" src="./assets/images/gun-detection.jpg">
         </a>
         <p class="project-desc">
-          With mass shootings being something of concern in the US nowadays,
-          myself and two peers decided to create an application that utilizes 
+          With mass shootings being something of concern in the U.S. nowadays,
+          two peers and I decided to create an application that utilizes 
           computer vision to recognize a person in possession of a firearm and identify 
           the class of firearm at the same time. This system would be embedded into security 
           cameras and would alert on-site security or local police in the event 
           that a possible shooter is identified. This could minimize or prevent damages caused 
           by said shooter.
           <br><br>
-          The system employs a supervised learning model that was trained with 
-          a convolutional neural network. It was trained using thousands of images distinguishing 
-          between handguns and rifles.
-        </p>
-      </div>
-      <div class="project-item">
-        <h3 class="project-section-title">ShareWhere</h3>
-        <a href="https://github.com/franky-cast/ChillSpots-App">
-          <img class="project-img" src="./assets/images/share-where.jpg">
-        </a>
-        <p class="project-desc">
-          This website allows for users to share their favorite locations 
-          to hang out at. If a user wants to add a new location, they are prompted 
-          to give it a fun name, add photos, directions, and various tags describing 
-          the location. This will help users prepare for things like parking, bodies of water, 
-          accesibility for the disabled, dog friendliness, type of view, cost, and so much more. Once a location 
-          is posted, other users can view it and save it to their favorites if they want to visit. 
-          The amount of saves is tracked and will be publicly displayed on the post so people can 
-          get an idea of how busy the location might be. Once a user has visited a location, they may 
-          leave a review on it in the app with a rating out of 5 stars and comments on their 
-          experience.
-          <br><br>
-          This website stores all data using MongoDB and is built using HTML, CSS, JavaScript, 
-          and React. It also utilizes Express.js and Node.js for navigation and package management. 
-          Adding and searching for locations uses a connection to the Google Maps API. This connection 
-          allows for easy acquisition of location coordinates for data storage purposes.
+          The system utilizes a supervised learning model built with a convolutional neural network. 
+          This model was trained using a dataset of thousands of labeled images, 
+          enabling it to accurately differentiate between various firearm types, such as handguns and rifles.
         </p>
       </div>
       <div class="project-item">
@@ -212,16 +206,14 @@
           <img class="project-img" src="./assets/images/deli-food-delivery.jpg">
         </a>
         <p class="project-desc">
-          This application keeps track of orders that a pizzeria receives and hands them off to 
-          various delivery services. All orders go through a buffer that is used to keep track 
-          of available slots for the food items. In this particular setup, the pizzeria is trying to promote 
-          the pizzas more than the sandwiches so they have put a limit on the number of sandwich orders that can be 
-          in the buffer at any given time. The number of active orders at one time is also limited so that the pizzeria is 
-          not taking on more than they can handle at once. There are multiple delivery services waiting to accept and transport 
-          the orders and all transactions are logged for proof of all completed orders.
+          This application manages pizzeria orders and assigns them to various delivery services. 
+          All orders pass through a buffer that tracks available slots for food items. To promote pizzas 
+          over sandwiches, the pizzeria limits the number of sandwich orders in the buffer at any given time. 
+          Additionally, the total number of active orders is capped to ensure the pizzeria can manage them efficiently. 
+          Multiple delivery services are on standby to accept and transport orders, and all transactions are logged to verify completed deliveries.
           <br><br>
-          This multi-threaded system was created entirely using C++ and uses semaphores and a queue for the bounded buffer and barrier.
-          All shared data is secured by locks and requires mutually exclusive access.
+          The multi-threaded system is built entirely in C++ and employs semaphores and a queue for the bounded 
+          buffer and barrier. All shared data is protected by locks, ensuring mutually exclusive access.
         </p>
       </div>
     </div>
